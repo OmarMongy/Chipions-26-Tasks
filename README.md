@@ -7,15 +7,6 @@ The objective of this design problem is to create an Arithmetic Logic Unit (ALU)
 
 An ALU is a fundamental digital circuit found in central processing units (CPUs) and microprocessors. Its primary function is to perform arithmetic (e.g., addition, subtraction) and logical (e.g., AND, OR, XOR) operations on binary data. In this design problem, we are tasked with developing a specific 16-bit ALU that supports a variety of operations, including addition, subtraction, bitwise AND, bitwise OR, bitwise XOR, and other logical operations based on the opcode provided.
 
-Submission:
-
-Submit the following items as part of your assignment:
-
-•	The RTL code for the 16-bit ALU in Verilog.
-
-•	The Verilog testbench code for the ALU, including multiple test cases.
-
-•	Screenshots or logs of the simulation results showing the ALU's correct operation for all test cases.
 
 
 Inputs :
