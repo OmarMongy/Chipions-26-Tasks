@@ -3,7 +3,6 @@ module ALU(
   input [2:0] sel,
   output reg [15:0] z
 );
-wire overflow;
 always @(*)
 begin
     case (sel)
