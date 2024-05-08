@@ -1,29 +1,54 @@
-# ALU_16bit
+# ALU
 
+## Overview
+This repository contains Verilog implementations of essential arithmetic logic units (ALUs) and supporting components. These modules are designed to facilitate arithmetic and logical operations in digital circuits. 
 
-## Description:
+## Table of Contents
+1. Introduction
+2. Project Structure
+3. Usage
+4. Opcode and Operations
+5. Verification
+6. Simulation Results
+7. Transcript Report
 
-The objective of this design problem is to create an Arithmetic Logic Unit (ALU) capable of performing various arithmetic and logical operations on two 16-bit inputs, based on a third input known as the "opcode." The ALU should produce a 32-bit output representing the result of the selected operation.
+## Introduction
+Digital circuits often require arithmetic and logical operations to process data efficiently. This project aims to provide reusable Verilog modules for implementing such operations, enhancing the design and development process of digital systems.
 
-An ALU is a fundamental digital circuit found in central processing units (CPUs) and microprocessors. Its primary function is to perform arithmetic (e.g., addition, subtraction) and logical (e.g., AND, OR, XOR) operations on binary data. In this design problem, we are tasked with developing a specific 16-bit ALU that supports a variety of operations, including addition, subtraction, bitwise AND, bitwise OR, bitwise XOR, and other logical operations based on the opcode provided.
+## Project Structure
+The project is structured as follows:
+- **`FullAdder.v`**: This module implements a full adder circuit capable of adding two binary inputs along with a carry-in.
+- **`RippleCarryAdder.v`**: The ripple carry adder module utilizes multiple instances of the full adder to perform binary addition for multiple bits.
+- **`ALU.v`**: This module serves as an arithmetic logic unit supporting various arithmetic and logical operations based on an opcode.
+- **`ALU_Golden.v`**: A golden model of the ALU is provided for verification purposes, ensuring the correctness of the main ALU module.
+- **`ALU_tb.v`**: This testbench module is designed to validate the functionality of the ALU module against the golden model.
 
+## Usage
+To integrate these Verilog modules into your digital circuit designs:
+1. **Instantiate Modules**: Incorporate the desired modules (`FullAdder`, `RippleCarryAdder`, or `ALU`) into your Verilog designs by instantiating them and connecting input and output ports appropriately.
+2. **Configure Parameters**: For modules with configurable parameters (such as `WIDTH` and `OPCODE`), adjust the parameters to suit your specific requirements.
+3. **Simulation and Synthesis**: Simulate the designs using a Verilog simulator to verify functionality. Additionally, these modules can be synthesized for implementation on FPGA or ASIC platforms.
 
+## Opcode and Operations
+The ALU module supports various operations based on the opcode provided:
+- `000`: Addition
+- `001`: Subtraction
+- `010`: Bitwise AND
+- `011`: Bitwise OR
+- `100`: Bitwise XOR
+- `101`: Set on Less Than [Inp1 > Inp2]
+- `110`: Left Shift Inp1 with 1 bit
+- `111`: Left Shift Inp2 with 1 bit
 
-## Inputs :
-•	Two inputs (Inp1 , Inp2) of 16-bit , These inputs hold the data on which the ALU will perform the designated operation.
-•	Opcode (Operation Code) of 3-bit , The opcode  input selects the operation that the ALU should perform on the two input operands. The opcode should be capable of representing different operations uniquely.
-## Outputs :
-•	The ALU should produce a 32-bit output (Result) that represents the result of the selected operation. The output width is determined by the maximum result size of the supported operations.
+## Verification
+Verification is essential to ensure the correctness of digital designs. The provided testbench `ALU_tb.v` facilitates verification by comparing the outputs of the main ALU module with the outputs of the golden model `ALU_Golden.v`. Running simulations using this testbench enables thorough testing of the ALU functionality.
 
-## Operations :
+## Simulation Results
+![Simulation Image 1](simulation_image1.png)
+*Caption for Simulation Image 1*
 
-## Opcode	Operation 
+![Simulation Image 2](simulation_image2.png)
+*Caption for Simulation Image 2*
 
-- 000	Addition           { Inp1 + Inp2 }        
-- 001	Subtraction        { Inp1 – Inp2 }
-- 010	Multiplication     { Inp1 * Inp2 }
-- 011	Division           { Inp1 / Inp2 }
-- 100	Logical OR         { Inp1 | Inp2 }
-- 101	Logical AND        { Inp1 & Inp2 }
-- 110	Logical NOT        { ~ Inp1 }
-- 111	Logical NOT        { ~ Inp2 }
+## Transcript Report
+Include your transcript report here, summarizing the results of the simulations and any observations or conclusions drawn from them.
