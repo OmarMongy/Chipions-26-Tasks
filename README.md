@@ -6,7 +6,7 @@ Welcome to the Chipions`26 Digital IC Training Tasks and Assignments repository!
             - [Project Structure](#ProjectStructure2)
             - [Usage](#Usage)
             - [Opcode and Operations](#OpcodeandOperationse)
-            - [Verificatione](#Verification)
+            - [Verification](#Verification)
 ## Introduction
 Digital circuits often require arithmetic and logical operations to process data efficiently. This project aims to provide reusable Verilog modules for implementing such operations, enhancing the design and development process of digital systems.
 
