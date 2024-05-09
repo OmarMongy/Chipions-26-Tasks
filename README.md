@@ -47,7 +47,7 @@ Verification is essential to ensure the correctness of digital designs. The prov
 - Testing the ALU model
 ![Simulation Image 1](https://i.ibb.co/QCgVVsf/Screenshot-2024-05-09-205912.png)
 - Golden Model Verification
-![Simulation Image 1](https://i.ibb.co/6NxDdsG/Screenshot-2024-05-09-002156.png)
+![Simulation Image 1](https://i.ibb.co/fD0hhrm/Screenshot-2024-05-09-210230.png)
 
 
 ## Transcript Report
