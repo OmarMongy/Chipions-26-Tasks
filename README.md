@@ -44,6 +44,9 @@ The ALU module supports various operations based on the opcode provided:
 Verification is essential to ensure the correctness of digital designs. The provided testbench `ALU_tb.v` facilitates verification by comparing the outputs of the main ALU module with the outputs of the golden model `ALU_Golden.v`. Running simulations using this testbench enables thorough testing of the ALU functionality.
 
 ## Simulation Results
+- Testing the ALU model
+![Simulation Image 1](https://i.ibb.co/QCgVVsf/Screenshot-2024-05-09-205912.png)
+- Golden Model Verification
 ![Simulation Image 1](https://i.ibb.co/6NxDdsG/Screenshot-2024-05-09-002156.png)
 
 
