@@ -55,13 +55,13 @@ always @* begin
         3'b101 : begin
             slt_flag   = data_in1 > data_in2;
         end
-        // Right shift operation
+        // First Input Left shift operation
         3'b110 : begin
             data = data_in1 << 1'b1;
             zero_flag = (data == 0);
             valid_flag = ~zero_flag;
         end
-        // Left shift operation
+        //  Second Input Left shift operation
         3'b111 : begin
             data = data_in2 << 1;
             zero_flag = (data == 0);
