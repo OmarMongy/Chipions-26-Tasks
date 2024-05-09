@@ -1,17 +1,12 @@
-# ALU
-
-## Overview
-This repository contains Verilog implementations of essential arithmetic logic units (ALUs) and supporting components. These modules are designed to facilitate arithmetic and logical operations in digital circuits. 
+# Overview
+Welcome to the Chipions`26 Digital IC Training Tasks and Assignments repository! This repository serves as a centralized hub for all tasks, assignments, and related materials for our digital integrated circuit (IC) training program
 
 ## Table of Contents
-1. Introduction
-2. Project Structure
-3. Usage
-4. Opcode and Operations
-5. Verification
-6. Simulation Results
-7. Transcript Report
-
+1. `ALU ` : - [Introduction](#Introduction)
+            - [Project Structure](#ProjectStructure2)
+            - [Usage](#Usage)
+            - [Opcode and Operations](#OpcodeandOperationse)
+            - [Verificatione](#Verification)
 ## Introduction
 Digital circuits often require arithmetic and logical operations to process data efficiently. This project aims to provide reusable Verilog modules for implementing such operations, enhancing the design and development process of digital systems.
 
@@ -43,13 +38,13 @@ The ALU module supports various operations based on the opcode provided:
 ## Verification
 Verification is essential to ensure the correctness of digital designs. The provided testbench `ALU_tb.v` facilitates verification by comparing the outputs of the main ALU module with the outputs of the golden model `ALU_Golden.v`. Running simulations using this testbench enables thorough testing of the ALU functionality.
 
-## Simulation Results
+### Simulation Results
 `Golden Model Verification`
 ![Simulation Image 1](https://i.ibb.co/fD0hhrm/Screenshot-2024-05-09-210230.png)
 `Testing the ALU model`
 ![Simulation Image 1](https://i.ibb.co/QCgVVsf/Screenshot-2024-05-09-205912.png)
 
-## Transcript Report
+### Transcript Report
 Include your transcript report here, summarizing the results of the simulations and any observations or conclusions drawn from them.
 - ![Transcript Report 1](https://i.ibb.co/K50B4jS/Screenshot-2024-05-09-002227.png)
 - ![Transcript Report 1](https://i.ibb.co/tcF181v/Screenshot-2024-05-09-002238.png)
