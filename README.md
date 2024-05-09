@@ -46,6 +46,5 @@ Verification is essential to ensure the correctness of digital designs. The prov
 ![Simulation Image 1](https://i.ibb.co/QCgVVsf/Screenshot-2024-05-09-205912.png)
 
 ### Transcript Report
-Include your transcript report here, summarizing the results of the simulations and any observations or conclusions drawn from them.
 - ![Transcript Report 1](https://i.ibb.co/K50B4jS/Screenshot-2024-05-09-002227.png)
 - ![Transcript Report 1](https://i.ibb.co/tcF181v/Screenshot-2024-05-09-002238.png)
