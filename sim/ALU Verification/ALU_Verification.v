@@ -11,7 +11,7 @@ wire [WIDTH-1:0] data_out;
 wire [WIDTH-1:0] golden_data_out;
 wire             carry_out, zero_flag, valid_flag, slt_flag;
 wire             golden_carry_out, golden_zero_flag, golden_valid_flag, golden_slt_flag;
-    // Instantiate ALU module and golden model
+// Instantiate ALU module and golden model
     ALU #(
         .WIDTH(WIDTH),
         .OPCODE(OPCODE)
@@ -43,7 +43,7 @@ wire             golden_carry_out, golden_zero_flag, golden_valid_flag, golden_s
     );
 
 
-    // Stimulus
+// Stimulus
 initial
 begin
         repeat (20) begin
