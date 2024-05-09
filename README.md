@@ -1,5 +1,6 @@
 # Overview
-Welcome to the Chipions`26 Digital IC Training Tasks and Assignments repository! This repository serves as a centralized hub for all tasks, assignments, and related materials for our digital integrated circuit (IC) training program
+- Welcome to the Chipions`26 Digital IC Training Tasks and Assignments repository!
+- This repository serves as a centralized hub for all tasks, assignments, and related materials to my digital integrated circuit (IC) training program
 
 ## Table of Contents
 1. `ALU ` : - [Introduction](#Introduction)
