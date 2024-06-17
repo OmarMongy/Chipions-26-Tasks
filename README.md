@@ -4,8 +4,8 @@
 
 ## Table of Contents
 1. `ALU ` : - [Arithmetic logic unit](#Arithmetic_logic_unit)
-2. `Sequence Detector FSM ` : - [Sequence Detector FSM logic unit](#Sequence_Detector_FSM)
-## Arithmetic logic unit
+2. `Sequence Detector FSM ` : - [Sequence Detector FSM](#Sequence_Detector_FSM)
+## Arithmetic_logic_unit
 Digital circuits often require arithmetic and logical operations to process data efficiently. This project aims to provide reusable Verilog modules for implementing such operations, enhancing the design and development process of digital systems.
 
 ## Project Structure
@@ -47,7 +47,7 @@ Verification is essential to ensure the correctness of digital designs. The prov
 - ![Transcript Report 1](https://i.ibb.co/tcF181v/Screenshot-2024-05-09-002238.png)
 
 
-# Sequence Detector FSM
+# Sequence_Detector_FSM
 
 This project contains the Verilog code for sequence detectors implemented using Moore and Mealy state machines. It includes testbenches to verify the functionality of both implementations.
 
