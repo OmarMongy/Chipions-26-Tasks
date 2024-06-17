@@ -85,10 +85,13 @@ The Mealy state machine is a type of FSM where the output depends on both the cu
   - `tb_Mealy_seq.v`: Testbench for the Mealy sequence detector.
 
 
-## Simulation
+## Simulation Results
 
 To simulate the sequence detectors, you can use any Verilog simulator like ModelSim, Vivado, etc. The testbenches provided will help you verify the functionality of the modules.
-
+`Moore Machine`
+![Simulation Image 1](https://i.ibb.co/MNWTZhg/Moore-Sequence-Detector.png)
+`Mealy Machine`
+![Simulation Image 1](https://i.ibb.co/KwrLFb7/Mealy-Sequence-Detector.png)
 ## Comparison between Moore and Mealy Machines
 Output Logic:
 
