@@ -91,19 +91,19 @@ The Mealy state machine is a type of FSM where the output depends on both the cu
 `Mealy Machine`
 ![Simulation Image 1](https://i.ibb.co/KwrLFb7/Mealy-Sequence-Detector.png)
 ## Comparison between Moore and Mealy Machines
-Output Logic:
+- Output Logic:
 
-Moore: The output depends solely on the current state. This can lead to a more stable and predictable output but might introduce a delay since the output only changes at state boundaries.
-Mealy: The output depends on both the current state and the input. This can allow the FSM to react faster to inputs since the output can change as soon as the input changes.
-State Complexity:
+`Moore`: The output depends solely on the current state. This can lead to a more stable and predictable output but might introduce a delay since the output only changes at state boundaries.
+`Mealy`: The output depends on both the current state and the input. This can allow the FSM to react faster to inputs since the output can change as soon as the input changes.
 
-Moore: Typically requires more states than a Mealy machine for the same functionality because it cannot produce different outputs in the same state based on inputs.
-Mealy: Can often achieve the same functionality with fewer states compared to a Moore machine.
-Design Simplicity:
+  
+- State Complexity:
 
-Moore: Simpler to design and understand since outputs are associated directly with states.
-Mealy: Slightly more complex due to the dependence on both state and input, but can result in more efficient designs.
-Conclusion
+`Moore`: Typically requires more states than a Mealy machine for the same functionality because it cannot produce different outputs in the same state based on inputs.
+`Mealy`: Can often achieve the same functionality with fewer states compared to a Moore machine.
+- Design Simplicity:
+
+`Moore`: Simpler to design and understand since outputs are associated directly with states.
+`Mealy`: Slightly more complex due to the dependence on both state and input, but can result in more efficient designs.
+-Conclusion
 Both Moore and Mealy machines have their own advantages and are used based on the requirements of the system. Moore machines provide more predictable outputs, while Mealy machines can be more responsive to inputs.
-
-Feel free to explore the code and run the simulations to get a better understanding of how these state machines operate.
