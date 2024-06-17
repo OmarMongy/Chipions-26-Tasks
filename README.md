@@ -48,3 +48,54 @@ Verification is essential to ensure the correctness of digital designs. The prov
 ### Transcript Report
 - ![Transcript Report 1](https://i.ibb.co/K50B4jS/Screenshot-2024-05-09-002227.png)
 - ![Transcript Report 1](https://i.ibb.co/tcF181v/Screenshot-2024-05-09-002238.png)
+
+
+# Sequence Detector FSM
+
+This project contains the Verilog code for sequence detectors implemented using Moore and Mealy state machines. It includes testbenches to verify the functionality of both implementations.
+
+## Overview
+
+A sequence detector is a finite state machine (FSM) that can detect a specific sequence of bits from a stream of input bits. This project demonstrates two different implementations of sequence detectors:
+
+1. **Moore State Machine**
+2. **Mealy State Machine**
+
+### Moore State Machine
+
+The Moore state machine is a type of FSM where the output depends only on the current state. The sequence is detected based on the state transitions.
+
+- **State Definitions**: Five states (S0, S1, S2, S3, S4).
+- **State Transition**: Transitions between states based on the input bit stream.
+- **Output Logic**: Sequence detected output is based on the state.
+
+### Mealy State Machine
+
+The Mealy state machine is a type of FSM where the output depends on both the current state and the current inputs. This allows for potentially faster reaction to inputs since outputs can change in the middle of a state transition.
+
+- **State Definitions**: Four states (S0, S1, S2, S3).
+- **State Transition**: Transitions between states based on the input bit stream.
+- **Output Logic**: Sequence detected output is based on both the state and input.
+
+## File Structure
+
+- **Moore State Machine**
+  - `Moore_seq.v`: Verilog module for the Moore sequence detector.
+  - `tb_Moore_seq.v`: Testbench for the Moore sequence detector.
+
+- **Mealy State Machine**
+  - `Mealy_seq.v`: Verilog module for the Mealy sequence detector.
+  - `tb_Mealy_seq.v`: Testbench for the Mealy sequence detector.
+
+## Usage
+
+### Simulation
+
+To simulate the sequence detectors, you can use any Verilog simulator like ModelSim, Vivado, etc. The testbenches provided will help you verify the functionality of the modules.
+
+```sh
+# For Moore State Machine
+vsim tb_Moore_seq
+
+# For Mealy State Machine
+vsim tb_Mealy_seq
