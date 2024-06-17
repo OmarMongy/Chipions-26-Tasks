@@ -105,5 +105,5 @@ The Mealy state machine is a type of FSM where the output depends on both the cu
 
 `Moore`: Simpler to design and understand since outputs are associated directly with states.<br>
 `Mealy`: Slightly more complex due to the dependence on both state and input, but can result in more efficient designs.
-- Conclusion
+- Conclusion <br>
 Both Moore and Mealy machines have their own advantages and are used based on the requirements of the system. Moore machines provide more predictable outputs, while Mealy machines can be more responsive to inputs.
